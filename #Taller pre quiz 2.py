@@ -36,3 +36,19 @@ def cargar_mat(ruta):
 def cargar_csv(ruta):
     if ruta.endswith('.csv'):
         return pd.read_csv(ruta)
+    
+#7 suma, resta , mult, div, log, prom, desviación estandar 
+def Suma(matriz , y=0):
+    return np.sum(matriz , axis=y)
+def Resta(matriz , y=0):
+    return np.(matriz , axis=y)
+def Mult(matriz , y=0):
+    return np.multiply(matriz , axis=y)
+def Div(matriz , y=0):
+    return np.divide(matriz , axis=y)
+def Log(matriz , y=0):
+    return np.log(matriz , axis=y)
+def Promedio(matriz , y=0):
+    return np.mean(matriz , axis=y)
+def Desviacion_estandar(matriz , y=0):
+    return np.(matriz , axis=y)
