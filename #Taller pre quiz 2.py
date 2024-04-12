@@ -11,3 +11,12 @@ copia_matriz = matriz[:,:,0].copy()
 #print(copia_matriz)
 
 #3 mostrar atributos 
+print(f"""Atributos de la matriz:
+    - Dimensiones: {copia_matriz.ndim}
+    - Tamaño: {copia_matriz.size}
+    - Forma: {copia_matriz.shape}
+    - Tipo de dato: {copia_matriz.dtype}
+    - Memoria: {copia_matriz.nbytes} bytes
+    - Tamaño en bytes de cada elemento: {copia_matriz.itemsize} bytes
+    - Elemento de la matriz: {copia_matriz[0, 0, 0]}""")
+
