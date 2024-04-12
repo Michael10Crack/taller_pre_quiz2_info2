@@ -41,7 +41,7 @@ def cargar_csv(ruta):
 def Suma(matriz , y=0):
     return np.sum(matriz , axis=y)
 def Resta(matriz , y=0):
-    return np.(matriz , axis=y)
+    return np.subtract(matriz , axis=y)
 def Mult(matriz , y=0):
     return np.multiply(matriz , axis=y)
 def Div(matriz , y=0):
@@ -51,4 +51,4 @@ def Log(matriz , y=0):
 def Promedio(matriz , y=0):
     return np.mean(matriz , axis=y)
 def Desviacion_estandar(matriz , y=0):
-    return np.(matriz , axis=y)
+    return np.std(matriz , axis=y)
