@@ -2,6 +2,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt
 import pandas as pd 
+import scipy.io as scy
 
 #1 crear la matriz numpy de 4 dim y size 1200000
 matriz = np.random.randint(0 , 255, size=(20, 30 , 40 ,50), dtype=np.uint8)
@@ -27,3 +28,11 @@ print(f'Tamaño: {copia_matriz.size}')
 #5 crear la funcion para convertir la matriz a objeto tipo dataframe de pandas
 def matriz_a_dataframe(matriz):
     return pd.DataFrame(matriz)
+
+#6 crear una funcion para cargar .mat y .csv
+def cargar_mat(ruta):
+    if ruta.endswith('.mat'):
+        return scy.loadmat(ruta)
+def cargar_csv(ruta):
+    if ruta.endswith('.csv'):
+        return pd.read_csv(ruta)
