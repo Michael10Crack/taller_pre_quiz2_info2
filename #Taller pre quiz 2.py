@@ -20,3 +20,10 @@ print(f"""Atributos de la matriz:
     - Tamaño en bytes de cada elemento: {copia_matriz.itemsize} bytes
     - Elemento de la matriz: {copia_matriz[0, 0, 0]}""")
 
+#4 modificar la forma a 2D
+copia_matriz.reshape(10, 3000)
+print(f'Tamaño: {copia_matriz.size}')
+
+#5 crear la funcion para convertir la matriz a objeto tipo dataframe de pandas
+def matriz_a_dataframe(matriz):
+    return pd.DataFrame(matriz)
